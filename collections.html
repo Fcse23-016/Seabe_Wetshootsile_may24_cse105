@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros. Website - Collections</title>
+    <style>
+        /* General CSS Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar */
+        .navigation-bar {
+            background-color: lightgray;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+        }
+
+        .nav-item {
+            padding: 0 15px;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-item a:hover {
+            color: blue;
+        }
+
+        .main-title {
+            text-align: center;
+        }
+
+        /* Merchandise Section with CSS Grid */
+        .section {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .merch-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%; /* Adjust width as needed */
+        }
+
+        .merch-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px 10px 0 0; /* Rounded corners only at top */
+        }
+
+        .merch-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .merch-item:hover .merch-overlay {
+            opacity: 1;
+        }
+
+        .terms-container {
+            width: 65%; /* Adjust width as needed */
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .terms-container h2 {
+            margin-bottom: 10px;
+        }
+
+        .terms-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .terms-list li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navigation-bar">
+        <div class="nav-item">
+            <a href="index.html" class="link">
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="movies.html" class="link active">
+                <span>Movies</span>
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="tv.html" class="link">
+                <span>TV</span>
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="tv_games_apps.html" class="link">
+                <span>TV Games & Apps</span>
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="collections.html" class="link">
+                <span>Collections</span>
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="stars.html" class="link">
+                <span>Feedback</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Title -->
+    <h1 class="main-title">Collections</h1>
+
+    <!-- Merchandise Section and Terms Container -->
+    <div class="section">
+        <!-- First Merchandise Item (Hoodies) -->
+        <div class="merch-item">
+            <a href="orders.html">
+                <img src="C:\Users\Wetshootsile\Videos\fcse23-016\hood1.jpeg" alt="Hoodies">
+                <div class="merch-overlay">Hoodies</div>
+            </a>
+        </div>
+
+        <!-- Second Merchandise Item (Graphic Tees) -->
+        <div class="merch-item">
+            <a href="checkout.html">
+                <img src="C:\Users\Wetshootsile\Videos\fcse23-016\tee1.jpeg" alt="Graphic Tees">
+                <div class="merch-overlay">Graphic Tees</div>
+            </a>
+        </div>
+
+        <!-- Terms and Conditions Container -->
+        <div class="terms-container">
+            <h2>Terms and Conditions</h2>
+            <ul class="terms-list">
+                <li>Terms Updates: Warner Bros reserves the right to update its shipping terms and conditions periodically, with notifications typically provided to customers about significant changes.</li>
+                <li>Returns and Refunds: Warner Bro's return policies allow for returns within a specified period for eligible items, with instructions provided on how to initiate a return and receive a refund.</li>
+                <li>International Shipping: Amazon offers international shipping to many countries, with specific terms and conditions varying by region and product eligibility. Customers may be responsible for additional customs duties or taxes.</li>
+                <li>Delivery Estimates: Amazon provides estimated delivery dates during checkout based on the shipping options selected and the shipping address provided.</li>
+                <li>Order Processing: Orders typically ship within a specific timeframe after payment confirmation, with some products eligible for pre-order.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros. Website - Movies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hover.css"> 
+    <style>
+        /* Main title styles */
+        .main-title {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Centering the loader animation */
+        .section.centered {
+            display: flex;
+            justify-content: center; /* Horizontal centering */
+            align-items: center; /* Vertical centering */
+            height: 80vh; /* Adjust as necessary */
+        }
+
+        /* Loader animation styles */
+        .container {
+            position: relative;
+        }
+
+        .loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 10;
+            width: 160px;
+            height: 100px;
+            margin-left: -80px;
+            margin-top: -50px;
+            border-radius: 5px;
+            background: #1e3f57;
+            animation: dot1_ 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
+        }
+
+        .loader:nth-child(2) {
+            z-index: 11;
+            width: 150px;
+            height: 90px;
+            margin-top: -45px;
+            margin-left: -75px;
+            border-radius: 3px;
+            background: #3c517d;
+            animation-name: dot2_;
+        }
+
+        .loader:nth-child(3) {
+            z-index: 12;
+            width: 40px;
+            height: 20px;
+            margin-top: 50px;
+            margin-left: -20px;
+            border-radius: 0 0 5px 5px;
+            background: #6bb2cd;
+            animation-name: dot3_;
+        }
+
+        @keyframes dot1_ {
+            3%, 97% {
+                width: 160px;
+                height: 100px;
+                margin-top: -50px;
+                margin-left: -80px;
+            }
+
+            30%, 36% {
+                width: 80px;
+                height: 120px;
+                margin-top: -60px;
+                margin-left: -40px;
+            }
+
+            63%, 69% {
+                width: 40px;
+                height: 80px;
+                margin-top: -40px;
+                margin-left: -20px;
+            }
+        }
+
+        @keyframes dot2_ {
+            3%, 97% {
+                height: 90px;
+                width: 150px;
+                margin-left: -75px;
+                margin-top: -45px;
+            }
+
+            30%, 36% {
+                width: 70px;
+                height: 96px;
+                margin-left: -35px;
+                margin-top: -48px;
+            }
+
+            63%, 69% {
+                width: 32px;
+                height: 60px;
+                margin-left: -16px;
+                margin-top: -30px;
+            }
+        }
+
+        @keyframes dot3_ {
+            3%, 97% {
+                height: 20px;
+                width: 40px;
+                margin-left: -20px;
+                margin-top: 50px;
+            }
+
+            30%, 36% {
+                width: 8px;
+                height: 8px;
+                margin-left: -5px;
+                margin-top: 49px;
+                border-radius: 8px;
+            }
+
+            63%, 69% {
+                width: 16px;
+                height: 4px;
+                margin-left: -8px;
+                margin-top: -37px;
+                border-radius: 10px;
+            }
+        }
+
+        /* Footer button styles */
+        footer {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        footer button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            color: black;
+        }
+        footer button svg {
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navigation-bar" role="navigation">
+        <div class="nav-item exampleBtn">
+            <a href="index.html" class="link">
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="nav-item exampleBtn">
+            <a href="movies.html" class="link active" aria-current="page">
+                <span>Movies</span>
+            </a>
+        </div>
+        <div class="nav-item exampleBtn">
+            <a href="tv.html" class="link">
+                <span>TV</span>
+            </a>
+        </div>
+        <div class="nav-item exampleBtn">
+            <a href="tv_games_apps.html" class="link">
+                <span>TV Games & Apps</span>
+            </a>
+        </div>
+        <div class="nav-item exampleBtn">
+            <a href="collections.html" class="link">
+                <span>Collections</span>
+            </a>
+        </div>
+        <div class="nav-item exampleBtn">
+            <a href="stars.html" class="link">
+                <span>Feedback</span>
+            </a>
+        </div>
+    </nav>
+
+    <h1 class="main-title">Thank you for your response</h1>
+
+    <!-- Animated Loaders -->
+    <div class="section centered">
+        <div class="container">
+            <div class="loader" aria-hidden="true"></div>
+            <div class="loader" aria-hidden="true"></div>
+            <div class="loader" aria-hidden="true"></div>
+        </div>
+    </div>
+
+    <!-- Footer Button -->
+    <footer>
+        <button onclick="window.location.href = 'index.html';" aria-label="Go to Home Page">
+            <span>Home</span>
+            <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+            </svg>
+        </button>
+    </footer>
+
+    <!-- Link to external JavaScript for animations -->
+    <script src="scripts.js"></script>
+</body>
+</html>
+

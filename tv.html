@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros. Website - TV</title>
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to hover.css for additional hover effects -->
+    <link rel="stylesheet" href="hover.css"> 
+    <style>
+        /* Additional styling for centering headings and divs */
+        .centered-headings {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .vertical-sections {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section {
+            width: 80%;
+            margin-bottom: 40px;
+        }
+        .content-wrapper {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .content-wrapper img {
+            margin-right: 20px;
+            transition: transform 0.3s ease-in-out;
+            max-width: 150px;
+            height: auto;
+        }
+        .content-wrapper img:hover {
+            transform: scale(1.1);
+        }
+        .content-wrapper a {
+            display: inline-block;
+        }
+        ul.facts-list {
+            list-style-type: disc;
+            margin: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navigation-bar">
+        <div class="nav-item exampleBtn">
+            <a href="index.html" class="link">
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="nav-item exampleBtn">
+            <a href="movies.html" class="link active">
+                <span>Movies</span>
+            </a>
+        </div>
+        <div class="nav-item exampleBtn">
+            <a href="tv.html" class="link">
+                <span>TV</span>
+            </a>
+        </div>
+        <div class="nav-item exampleBtn">
+            <a href="tv_games_apps.html" class="link">
+                <span>TV Games & Apps</span>
+            </a>
+        </div>
+        <div class="nav-item exampleBtn">
+            <a href="collections.html" class="link">
+                <span>Collections</span>
+            </a>
+        </div>
+        <div class="nav-item exampleBtn">
+            <a href="stars.html" class="link">
+                <span>Feedback</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Title -->
+    <h1 class="main-title">TV</h1>
+
+    <!-- Vertical Sections -->
+    <div class="vertical-sections">
+        <!-- New Releases Section -->
+        <div class="centered-headings">
+            <h2>Classic Releases</h2>
+        </div>
+        <div class="section">
+            <!-- Content for New Releases -->
+            <div class="content-wrapper">
+                <a href="https://www.gotoon.tv/tv-show/the-looney-tunes-show/" target="_blank">
+                    <img src="C:/Users/Wetshootsile/Videos/fcse23-016/tv1.jpeg" alt="Looney Tunes">
+                </a>
+                <ul class="facts-list">
+                    <li>Looney Tunes was originally created to promote Warner Bros.’s music catalog in the 1930s, hence the name “Tunes” instead of “Toons”.</li>
+                    <li>The series made its debut in 1930 with the release of the cartoon short “Sinkin’ in the Bathtub”.</li>
+                    <li>The most iconic characters of Looney Tunes include Bugs Bunny, Daffy Duck, Porky Pig, Tweety bird and Sylvester the cat.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Upcoming Section -->
+        <div class="centered-headings">
+            <h2>Upcoming</h2>
+        </div>
+        <div class="section">
+            <!-- Content for Upcoming -->
+            <div class="content-wrapper">
+                <a href="https://www.warnerbros.com/tv/ted-lasso-1" target="_blank">
+                    <img src="C:/Users/Wetshootsile/Videos/fcse23-016/tv2.jpeg" alt="Ted Lasso">
+                </a>
+                <p>Ted Lasso is an American sports comedy-drama television series developed by Jason Sudeikis, Bill Lawrence, Brendan Hunt, and Joe Kelly, based on a character Sudeikis portrayed in a series of promotional media for NBC Sports's coverage of England's Premier League. The show follows Ted Lasso, an American college football coach who is hired to coach an English soccer team.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+

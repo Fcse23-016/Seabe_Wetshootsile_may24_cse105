@@ -1,0 +1,109 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for navigation bar */
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.link.active {
+    color: blue;
+}
+
+/* Main title style */
+.main-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Center all headings */
+h1, h2 {
+    text-align: center;
+}
+
+/* Section style */
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Merchandise grid style */
+.merchandise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px; /* Gap between items */
+}
+
+.merch-item {
+    position: relative;
+}
+
+.merch-item img {
+    width: 100%;
+    height: auto;
+}
+
+.merch-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.merch-item:hover .merch-overlay {
+    opacity: 1;
+}
+
+/* Apply exampleClass styles to the merchandise overlays */
+.merch-item .exampleClass {
+    padding: 12px 24px;
+    color: black;
+    transition: transform 0.15s;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.merch-item .exampleClass::after {
+    content: '';
+    background-color: white;
+    transition: transform 0.15s;
+    border-radius: 7px;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.merch-item .exampleClass:hover::after {
+    transform: scale(1.1);
+}

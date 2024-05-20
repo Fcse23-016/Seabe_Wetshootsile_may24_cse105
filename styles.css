@@ -1,0 +1,38 @@
+/* CSS styles for the list */
+.navigation-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* CSS styles for links */
+.link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    font-weight: 700;
+    animation: animateLink 1s ease-in-out;
+}
+
+/* CSS styles for link names */
+.name {
+    position: absolute;
+    top: 70%;
+    font-size: 11px;
+    color: blue;
+    font-weight: 800;
+}
+
+/* Animation */
+@keyframes animateLink {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
